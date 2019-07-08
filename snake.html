@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <script src="snake.js"></script>
+    <style>
+        .cell { 
+            width: 15px;
+            height: 15px;
+        }
+      
+        .red {
+            background-color:#FF0000;
+        }
+        .black {
+            background-color:#000000;
+        }
+        .gray {
+            background-color:#aaaaaa;
+        }
+      </style>
+      </head>
+<body onload="init()">
+    <div id = 'output'></div>
+    <button onclick='direction = "up"; nextMove(); drawTable();'>up</button>
+    <button onclick='direction = "down"; nextMove(); drawTable();'>down</button>
+    <button onclick='direction = "left"; nextMove(); drawTable();'>left</button>
+    <button onclick='direction = "right"; nextMove(); drawTable();'>right</button>
+</body>
